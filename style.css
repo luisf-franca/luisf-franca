@@ -4,8 +4,8 @@ html {
 
 body {
     background-color: #F6F6F6;
-    padding-left: 2rem;
-    padding-right: 2rem
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 header {
@@ -76,17 +76,18 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: url('./assets/home_background.png') bottom/contain no-repeat;;
 }
 
 .name {
-    margin-top: 0px;
+    margin-top: -10rem;
     text-align: center;
     font-size: 8rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .title {
-    margin-top: 0rem;
+    margin-top: -2rem;
     text-align: center;
 }
 
