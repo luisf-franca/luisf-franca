@@ -8,6 +8,10 @@ body {
     margin-right: 0px;
 }
 
+.header_mobile{
+    display: none;
+}
+
 header {
     position: absolute;
     width: 100%;
@@ -24,6 +28,7 @@ header {
     from {
         transform: translateY(-100%);
     }
+
     to {
         transform: translateY(0);
     }
@@ -51,6 +56,11 @@ header.fixed .logo {
 
 .logo {
     height: 2rem;
+    transition: .3s ease;
+}
+
+.logo:hover {
+    opacity: 60%;
 }
 
 nav ul {
@@ -66,16 +76,32 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #000000
+    color: #000000;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav:hover a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+    color:#000000;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 980px;
 }
 
 .home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    position: top;
     background: url('./assets/home_background.png') bottom/contain no-repeat;
 }
 
@@ -92,7 +118,7 @@ nav a {
 }
 
 .expertise {
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -100,7 +126,7 @@ nav a {
     justify-content: center;
 }
 
-.expertise h1 {
+.expertise h2 {
     margin-top: 0px;
     font-size: 5rem;
 }
@@ -112,18 +138,62 @@ nav a {
 
 .expertise-item {
     flex: 1;
-    margin: 10px;
-    padding: 20px;
+    /* margin-block: 3rem; */
+    padding-block: 5rem;
+    padding-inline: 3rem;
     border: 1px solid #ccc;
 }
 
 .work {
     height: 100vh;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7rem;
+    align-items: center;
+
+}
+
+.work h2 {
+    margin: 0;
+    font-size: 5rem;
+    line-height: 1;
+    width: 15%;
+}
+
+.allboro_container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+.allboro_description {
+    width: 40ch;
+}
+
+.allboro_image {
+    max-height: 65%;
+    object-fit: contain;
+
+}
+
+.allboro_container button{
+    width: max-content;
+    padding: 0.5rem 1.5rem;
+    background: #000000;
+    border-radius: 5px;
+    border-width: 0;
+    appearance:unset;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.allboro_container a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.allboro_container button:hover {
+   opacity: 80%;
 }
 
 .contact {
@@ -135,23 +205,82 @@ nav a {
     justify-content: center;
 }
 
-h1 {
+h1,
+h2 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-bottom: 0rem;
 }
 
-h2 {
+h3 {
     font-family: "Amiko", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
+    font-size: 1.5rem;
 }
 
-h3,
 p,
 li {
     font-family: "Amiko", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+@media (max-width: 960px) {
+    
+    .header{
+        display: none;
+    }
+
+    header.fixed{
+        display: none;
+    }
+
+
+    .header_mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: right;
+    }
+ 
+    .initial{
+        align-items: start;
+    }
+
+    .name {
+        font-size: 5rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .expertise-container {
+        flex-direction: column;
+    }
+
+    .expertise {
+        margin-top: 3rem;
+    }
+
+    .expertise h2 {
+        font-size: 2.5rem;
+    }
+
+    .work {
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+
+    .work h2 {
+        font-size: 2.5rem;
+    }
+
+
+
+
 }

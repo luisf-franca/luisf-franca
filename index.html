@@ -18,14 +18,23 @@
 <body>
 
     <header class="initial">
-        <img src="./assets/logo.png" alt="logo" class="logo">
+
+        <a href="#home"><img src="./assets/logo.png" alt="logo" class="logo"></a>
         <nav>
-            <ul>
-                <li><a href="#home"><span>// home</span></a></li>
-                <li><a href="#expertise"><span>// expertise</span></a></li>
-                <li><a href="#work"><span>// work</span></a></li>
-                <li><a href="#contact"><span>// contact</span></a></li>
+            <ul class="header">
+                <li><a href="#home">// home</a></li>
+                <li><a href="#expertise">// expertise</a></li>
+                <li><a href="#work">// work</a></li>
+                <li><a href="#contact">// contact</a></li>
             </ul>
+
+            <div class="header_mobile">
+                <li><a href="#home">// home</a></li>
+                <li><a href="#expertise">// expertise</a></li>
+                <li><a href="#work">// work</a></li>
+                <li><a href="#contact">// contact</a></li>
+            </div>
+
         </nav>
     </header>
 
@@ -36,34 +45,48 @@
             <p class="title">SOFTWARE ENGINEER, FRONT END & APP DEVELOPER.</p>
         </section>
 
-        <section id="expertise" class="expertise">
-            <h1>My Expertise</h1>
+        <section id="expertise" class="expertise container">
+            <h2>My Expertise</h2>
 
             <div class="expertise-container">
                 <div class="expertise-item">
-                    <h2>Software Development</h2>
-                    <h3>Experienced in Python, JavaScript, TypeScript.</h3>
+                    <h3>Software Development</h3>
+                    <p>Experienced in Python, JavaScript, TypeScript.</p>
                 </div>
 
                 <div class="expertise-item">
-                    <h2>Frontend Dev ReactJS</h2>
-                    <h3>Passionate about UI/UX. Development experience in HTML, CSS, JS, React and NodeJS frameworks.
-                    </h3>
+                    <h3>Frontend Dev ReactJS</h3>
+                    <p>Passionate about UI/UX. Development experience in HTML, CSS, JS, React and NodeJS frameworks.
+                    </p>
                 </div>
 
                 <div class="expertise-item">
-                    <h2>React Native Android, iOS</h2>
-                    <h3>Skilled in developing mobile apps using the React Native framework.</h3>
+                    <h3>React Native Android, iOS</h3>
+                    <p>Skilled in developing mobile apps using the React Native framework.</p>
                 </div>
             </div>
         </section>
 
-        <section id="work" class="work">
-            <h1>My Work</h1>
+        <section id="work" class="work container">
+            <div class="allboro_container">
+                <h2>My Work</h2>
+                <p class="allboro_description">As the leader of the programming team, I had the honor of playing a
+                    pivotal role in the development of All Boro Tours, an innovative tourism project based in Manhattan,
+                    New York City. My focus was on the front end, utilizing React JS and React Native, in addition to
+                    integrating an API developed in C#. I worked to create intuitive and efficient interfaces, providing
+                    an engaging experience for users. I take pride in having led the team in this project, contributing
+                    to the development of a platform that connects tourists to the wonders of different places.</p>
+                <button>
+                    <a href="">See more</a>
+                </button>
+            </div>
+            <img src="./assets/allboro.png" alt="allboro" class="allboro_image">
+
         </section>
 
-        <section id="contact" class="contact">
-            <h1>Contact</h1>
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+
         </section>
 
 
