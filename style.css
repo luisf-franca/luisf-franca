@@ -228,6 +228,7 @@ li {
 }
 
 @media (max-width: 960px) {
+
     
     .header{
         display: none;
@@ -247,6 +248,8 @@ li {
  
     .initial{
         align-items: start;
+        margin: 0 auto;
+        padding-right: 0;
     }
 
     .name {
@@ -261,6 +264,7 @@ li {
 
     .expertise-container {
         flex-direction: column;
+        margin-top: 2rem;
     }
 
     .expertise {
@@ -278,6 +282,10 @@ li {
 
     .work h2 {
         font-size: 2.5rem;
+    }
+
+    .work p {
+        width: 30ch
     }
 
 
