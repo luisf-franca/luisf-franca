@@ -96,12 +96,11 @@ nav a:hover {
 }
 
 .home {
-    min-height: 100dvh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: top;
     background: url('./assets/home_background.png') bottom/contain no-repeat;
 }
 
