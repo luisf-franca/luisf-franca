@@ -197,36 +197,49 @@ nav a:hover {
 
 .contact {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 0.7fr 1fr; */
 }
 
 .container1{
-    display: flex;
     background-color: #000000;
-    align-self: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .container1 h2{
     color: #FFFFFF;
+    font-size: 3rem;
 }
 
-.container2{
-    background-color: red;
+
+.container1 a, .container1 p{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+
+/* .container2{
+    background-color:#333333;
     height: 100%;
 }
 
 .container3{
-    background-color: green;
+    background-color: #666666;
     height: 50%;
 
 }
 
 .container4{
-    background-color: blue;
+    background-color: #999999;
     height: 50%;
 
-}
+} */
 
 h1,
 h2 {
@@ -244,7 +257,8 @@ h3 {
 }
 
 p,
-li {
+li,
+a {
     font-family: "Amiko", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -253,8 +267,8 @@ li {
 @media (max-width: 1280px){
     .contact {
         height: 100vh;
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        /* display: grid;
+        grid-template-columns: 2fr 1fr 1fr; */
     }
     
 }
@@ -322,20 +336,19 @@ li {
 
     .contact {
         height: auto;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
     }
     
     .container1{
         display: flex;
         background-color: #000000;
-        align-self: left;
     }
     
     .container1 h2{
         color: #FFFFFF;
     }
     
-    .container2{
+    /* .container2{
         background-color: red;
         height: 100%;
     }
@@ -350,7 +363,7 @@ li {
         background-color: blue;
         height: 50%;
     
-    }
+    } */
 
 
 
