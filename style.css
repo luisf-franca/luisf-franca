@@ -4,8 +4,7 @@ html {
 
 body {
     background-color: #F6F6F6;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
 }
 
 .dark-mode {
@@ -108,6 +107,7 @@ header.fixed .logo-link {
 
 .header_links {
     display: flex;
+    gap: 1rem;
 }
 
 
@@ -252,7 +252,6 @@ nav a:hover {
 .allboro_image {
     max-height: 65%;
     object-fit: contain;
-
 }
 
 .allboro_container button{
@@ -357,7 +356,7 @@ a {
 
     .header_links {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         align-items: start;
     }
     
@@ -384,8 +383,19 @@ a {
 
     .header_links {
         display: flex;
-        flex-direction: row-reverse;
-        align-items: start;
+        flex-direction: column;
+        align-items: end;
+    }
+    
+    .selectors {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: end;
+    }
+
+    .selectors img {
+        object-fit: contain;
     }
     
  
@@ -433,16 +443,28 @@ a {
 
     .contact {
         height: auto;
+        margin-top: 3rem;
         /* grid-template-columns: 1fr; */
     }
+    
     
     .container1{
         display: flex;
         background-color: #000000;
+        padding-bottom: 3rem;
     }
     
     .container1 h2{
         color: #FFFFFF;
+        font-size: 2.5rem;
+    }
+
+    .container1 p{
+        font-size: 1rem;
+    }
+
+    .container1 a{
+        font-size: 1rem;
     }
     
     /* .container2{
