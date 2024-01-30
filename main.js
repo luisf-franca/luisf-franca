@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.toggle('dark-mode');
 
         const isDarkMode = body.classList.contains('dark-mode');
-        body.style.backgroundColor = isDarkMode ? '#000000' : '#F6F6F6';
+        body.style.backgroundColor = isDarkMode ? '#0E0F11' : '#F6F6F6';
         body.style.color = isDarkMode
 
         const logoDark = document.querySelector('.logo_dark');
