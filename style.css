@@ -86,6 +86,7 @@ header.fixed {
     border-width: 0;
     appearance:unset;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .selectors button:hover{
