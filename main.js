@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('header');
+    const body = document.body;
 
     window.addEventListener('scroll', function () {
         var scrollPosition = window.scrollY;
@@ -10,22 +11,20 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('fixed');
         }
     });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
     const darkModeButton = document.getElementById('darkModeButton');
-    const body = document.body;
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    darkModeButton.addEventListener('click', function () {
+    function toggleDarkMode() {
         body.classList.toggle('dark-mode');
 
         const isDarkMode = body.classList.contains('dark-mode');
         body.style.backgroundColor = isDarkMode ? '#0E0F11' : '#F6F6F6';
-        body.style.color = isDarkMode
+        body.style.color = isDarkMode ? '#FFFFFF' : '#000000';
 
         const logoDark = document.querySelector('.logo_dark');
         const logoWhite = document.querySelector('.logo_white');
-    
+
         if (isDarkMode) {
             logoDark.style.display = 'block';
             logoWhite.style.display = 'none';
@@ -33,6 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
             logoDark.style.display = 'none';
             logoWhite.style.display = 'block';
         }
+    }
+
+    if (prefersDarkMode) {
+        toggleDarkMode();
+    }
+
+    darkModeButton.addEventListener('click', function () {
+        toggleDarkMode();
     });
 });
 
