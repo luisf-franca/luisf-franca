@@ -87,6 +87,7 @@ header.fixed {
     appearance:unset;
     cursor: pointer;
     text-decoration: none;
+    color:#000000
 }
 
 .selectors button:hover{
@@ -342,7 +343,8 @@ h3 {
 
 p,
 li,
-a {
+a,
+button {
     font-family: "Amiko", sans-serif;
     font-weight: 400;
     font-style: normal;
