@@ -35,3 +35,26 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+let currentLanguage = 'pt';
+
+function updateLanguage() {
+    const elementsToTranslate = document.querySelectorAll('[data-en], [data-pt]');
+
+    elementsToTranslate.forEach((element) => {
+        const enText = element.getAttribute('data-en');
+        const ptText = element.getAttribute('data-pt');
+
+        element.textContent = currentLanguage === 'en' ? enText : ptText;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    updateLanguage();
+});
+
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'pt' : 'en';
+    updateLanguage();
+}

@@ -30,22 +30,24 @@
         <div class="header_links">
             <nav>
                 <ul class="header">
-                    <li><a href="#home">// home</a></li>
-                    <li><a href="#expertise">// expertise</a></li>
-                    <li><a href="#work">// work</a></li>
-                    <li><a href="#contact">// contact</a></li>
+                    <li><a href="#home" data-en="// home" data-pt="// início"></a></li>
+                    <li><a href="#expertise" data-en="// expertise" data-pt="// experiência"></a></li>
+                    <li><a href="#work" data-en="// work" data-pt="// trabalho"></a></li>
+                    <li><a href="#contact" data-en="// contact" data-pt="// contato"></a></li>
                 </ul>
 
                 <div class="header_mobile">
-                    <li><a href="#home">// home</a></li>
-                    <li><a href="#expertise">// expertise</a></li>
-                    <li><a href="#work">// work</a></li>
-                    <li><a href="#contact">// contact</a></li>
+                    <li><a href="#home" data-en="// home" data-pt="// início"></a></li>
+                    <li><a href="#expertise" data-en="// expertise" data-pt="// experiência"></a></li>
+                    <li><a href="#work" data-en="// work" data-pt="// trabalho"></a></li>
+                    <li><a href="#contact" data-en="// contact" data-pt="// contato"></a></li>
                 </div>
             </nav>
 
-
+            <div class="selectors">
             <img id="darkModeButton" src="./assets/darkmode2.png" alt="Dark Mode Toggle">
+            <button id="languageButton" onclick="toggleLanguage()">EN/PT</button>
+        </div>
 
         </div>
     </header>
@@ -54,40 +56,55 @@
 
         <section id="home" class="home">
             <h1 class="name">LUÍS FILIPE</h1>
-            <p class="title">SOFTWARE ENGINEER, FRONT END & APP DEVELOPER.</p>
+            <p class="title" data-en="SOFTWARE ENGINEER, FRONT END & APP DEVELOPER."
+                data-pt="ENGENHEIRO DE SOFTWARE, FRONT END E DESENVOLVEDOR DE APLICATIVOS."></p>
         </section>
 
         <section id="expertise" class="expertise container">
-            <h2>My Expertise</h2>
+            <h2 data-en="My Expertise" data-pt="Minha Experiência"></h2>
 
             <div class="expertise-container">
                 <div class="expertise-item">
-                    <h3>Software Development</h3>
-                    <p>Experienced in Python, JavaScript, TypeScript.</p>
+                    <h3 data-en="Software Development" data-pt="Desenvolvimento de software"></h3>
+                    <p data-en="Experienced in Python, JavaScript, TypeScript."
+                        data-pt="Experiente em Python, JavaScript, TypeScript"></p>
                 </div>
 
                 <div class="expertise-item">
-                    <h3>Frontend Dev ReactJS</h3>
-                    <p>Passionate about UI/UX. Development experience in HTML, CSS, JS, React and NodeJS frameworks.
+                    <h3 data-en="Front-end Dev ReactJS" data-pt="Front-end Dev ReactJS"></h3>
+                    <p data-en="Passionate about UI/UX. Development experience in HTML, CSS, JS, React and NodeJS frameworks."
+                        data-pt="Apaixonado por UI/UX. Experiência em desenvolvimento com HTML, CSS, JS, React e frameworks NodeJS.">
                     </p>
                 </div>
 
                 <div class="expertise-item">
-                    <h3>React Native Android, iOS</h3>
-                    <p>Skilled in developing mobile apps using the React Native framework.</p>
+                    <h3 data-en="React Native Android, iOS" data-pt="React Native Android, iOS"></h3>
+                    <p data-en="Skilled in developing mobile apps using the React Native framework."
+                        data-pt="Habilidoso em desenvolver aplicativos móveis utilizando o framework React Native."></p>
                 </div>
             </div>
         </section>
 
         <section id="work" class="work container">
             <div class="allboro_container">
-                <h2>My Work</h2>
-                <p class="allboro_description">As the leader of the programming team, I had the honor of playing a
-                    pivotal role in the development of All Boro Tours, an innovative tourism project based in Manhattan,
-                    New York City. My focus was on the front end, utilizing React JS and React Native, in addition to
-                    integrating an API developed in C#. I worked to create intuitive and efficient interfaces, providing
-                    an engaging experience for users. I take pride in having led the team in this project, contributing
-                    to the development of a platform that connects tourists to the wonders of different places.</p>
+                <h2 data-en="My Work" data-pt="Meu Trabalho"></h2>
+                <p class="allboro_description" 
+                
+                data-en="As the leader of the programming team, I had the honor of playing a
+                pivotal role in the development of All Boro Tours, an innovative tourism project based in Manhattan,
+                New York City. My focus was on the front end, utilizing React JS and React Native, in addition to
+                integrating an API developed in C#. I worked to create intuitive and efficient interfaces, providing
+                an engaging experience for users. I take pride in having led the team in this project, contributing
+                to the development of a platform that connects tourists to the wonders of different places."
+
+                data-pt="Como líder da equipe de programadores, tive a honra de desempenhar um papel fundamental 
+                no desenvolvimento do All Boro Tours, um projeto inovador de turismo sediado na ilha de Manhattan, 
+                em Nova York. Concentrei meus esforços no front end, utilizando React JS e React Native, além de 
+                integrar uma API desenvolvida em C#. Trabalhei para criar interfaces intuitivas e eficientes, 
+                proporcionando uma experiência envolvente para os usuários. Fico orgulhoso de ter liderado a equipe 
+                nesse projeto, contribuindo para o desenvolvimento de uma plataforma que conecta turistas às 
+                maravilhas de diferentes lugares.">
+                </p>
                 <!-- <button>
                     <a href="">See more</a>
                 </button> -->
@@ -99,7 +116,7 @@
         <section id="contact" class="contact">
 
             <div class="container1">
-                <h2>Contact</h2>
+                <h2 data-en="Contact" data-pt="Contato"></h2>
                 <p>luisfranca@outlook.com</p>
                 <a href="https://instagram.com/luisf.franca" target="_blank">Instagram</a>
                 <a href="https://www.linkedin.com/in/luisfilipefranca/" target="_blank">LinkedIn</a>

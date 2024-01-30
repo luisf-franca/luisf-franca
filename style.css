@@ -31,6 +31,11 @@ body {
 
 #darkModeButton{
     height: 1.3rem;
+    cursor: pointer;
+}
+
+#darkModeButton:hover{
+    opacity: 60%;
 }
 
 header {
@@ -69,6 +74,27 @@ header.fixed {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     animation: slideDown 0.3s ease-out;
+}
+
+.selectors{
+    display: flex;
+    gap: 1rem;
+}
+
+.selectors button{
+    width: max-content;
+    background-color: transparent;
+    border-width: 0;
+    appearance:unset;
+    cursor: pointer;
+}
+
+.selectors button:hover{
+    opacity: 60%;
+}
+
+.dark-mode .selectors button{
+    color:#F6F6F6
 }
 
 .dark-mode header.fixed {
@@ -275,6 +301,10 @@ nav a:hover {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1.5rem;
+}
+
+.container1 a:hover{
+    opacity: 60%;
 }
 
 
