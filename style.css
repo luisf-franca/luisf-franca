@@ -71,6 +71,11 @@ header.fixed {
     animation: slideDown 0.3s ease-out;
 }
 
+.dark-mode header.fixed {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
 header.fixed .logo-link {
     display: none;
 }
