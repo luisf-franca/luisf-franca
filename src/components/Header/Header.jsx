@@ -16,7 +16,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('header');
-      header.classList.toggle('fixed', window.scrollY > window.innerHeight);
+      header.classList.toggle('fixed', window.scrollY > window.innerHeight - 1);
     };
 
     window.addEventListener('scroll', handleScroll);
