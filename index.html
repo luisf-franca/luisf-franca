@@ -1,142 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUÍS FILIPE</title>
-    <link rel="icon" type="image/png" href="./assets/icon.png">
-    <script src="./main.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="language" content="pt-BR">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f5f5" />
+  <link rel="icon" type="image/png" href="src/assets/icon.png">
+  <title>LUÍS FILIPE</title>
 </head>
 
 <body>
-
-    <header class="initial">
-        <div>
-            <a href="#home" class="logo-link">
-                <img src="./assets/logo_dark.png" alt="logo" class="logo_dark">
-            </a>
-            <a href="#home" class="logo-link">
-                <img src="./assets/logo_white.png" alt="logo" class="logo_white">
-            </a>
-        </div>
-
-        <div class="header_links">
-            <nav>
-                <ul class="header">
-                    <li><a href="#home" data-en="// home" data-pt="// início"></a></li>
-                    <li><a href="#expertise" data-en="// expertise" data-pt="// experiência"></a></li>
-                    <li><a href="#work" data-en="// work" data-pt="// trabalho"></a></li>
-                    <li><a href="#contact" data-en="// contact" data-pt="// contato"></a></li>
-                </ul>
-
-                <div class="header_mobile">
-                    <li><a href="#home" data-en="// home" data-pt="// início"></a></li>
-                    <li><a href="#expertise" data-en="// expertise" data-pt="// experiência"></a></li>
-                    <li><a href="#work" data-en="// work" data-pt="// trabalho"></a></li>
-                    <li><a href="#contact" data-en="// contact" data-pt="// contato"></a></li>
-                </div>
-            </nav>
-
-            <div class="selectors">
-                <img id="darkModeButton" src="./assets/darkmode2.png" alt="Dark Mode Toggle">
-                <button id="languageButton" onclick="toggleLanguage()">EN/PT</button>
-            </div>
-
-        </div>
-    </header>
-
-    <main>
-
-        <section id="home" class="home">
-            <h1 class="name">LUÍS FILIPE</h1>
-            <p class="title" data-en="SOFTWARE ENGINEER, FRONT END & APP DEVELOPER."
-                data-pt="ENGENHEIRO DE SOFTWARE, FRONT END E DESENVOLVEDOR DE APLICATIVOS."></p>
-        </section>
-
-        <section id="expertise" class="expertise container">
-            <h2 data-en="My Expertise" data-pt="Minha Experiência"></h2>
-
-            <div class="expertise-container">
-                <div class="expertise-item">
-                    <h3 data-en="Software Development" data-pt="Desenvolvimento de software"></h3>
-                    <p data-en="Experienced in Python, JavaScript, TypeScript."
-                        data-pt="Experiente em Python, JavaScript, TypeScript"></p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3 data-en="Front-end Dev ReactJS" data-pt="Front-end Dev ReactJS"></h3>
-                    <p data-en="Passionate about UI/UX. Development experience in HTML, CSS, JS, React and NodeJS frameworks."
-                        data-pt="Apaixonado por UI/UX. Experiência em desenvolvimento com HTML, CSS, JS, React e frameworks NodeJS.">
-                    </p>
-                </div>
-
-                <div class="expertise-item">
-                    <h3 data-en="React Native Android, iOS" data-pt="React Native Android, iOS"></h3>
-                    <p data-en="Skilled in developing mobile apps using the React Native framework."
-                        data-pt="Habilidoso em desenvolver aplicativos móveis utilizando o framework React Native."></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="work" class="work container">
-            <div class="allboro_container">
-                <h2 data-en="My Work" data-pt="Meu Trabalho"></h2>
-                <p class="allboro_description"
-                    data-en="As the leader of the programming team, I had the honor of playing a pivotal role in the development of All Boro Tours, an innovative tourism project based in Manhattan, New York City. My focus was on the front end, utilizing React JS and React Native, in addition to integrating an API developed in C#. I worked to create intuitive and efficient interfaces, providing an engaging experience for users. I take pride in having led the team on this project, contributing to the development of a platform that connects tourists to the wonders of different places."
-                    data-pt="Como líder da equipe de programadores, tive a honra de desempenhar um papel fundamental no desenvolvimento do All Boro Tours, um projeto inovador de turismo sediado na ilha de Manhattan, em Nova York. Concentrei-me nos esforços no front-end, utilizando React JS e React Native, além de integrar uma API desenvolvida em C#. Trabalhei para criar interfaces intuitivas e eficientes, proporcionando uma experiência envolvente para os usuários. Fico orgulhoso de ter liderado a equipe nesse projeto, contribuindo para o desenvolvimento de uma plataforma que conecta turistas às maravilhas de diferentes lugares.">
-                </p>
-                <!-- <button>
-                    <a href="">See more</a>
-                </button> -->
-            </div>
-            <img src="./assets/allboro.png" alt="allboro" class="allboro_image">
-
-        </section>
-
-        <section id="contact" class="contact">
-
-            <div class="container1">
-                <h2 data-en="Contact" data-pt="Contato"></h2>
-                <a href = "mailto:luisfranca@outlook.com" target="_blank">luisfranca@outlook.com</a>
-                <a href="https://instagram.com/luisf.franca" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/luisfilipefranca/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/luisf-franca" target="_blank">GitHub</a>
-                <a href="https://www.behance.net/luisffranca" target="_blank">Behance</a>
-                <a href="https://api.whatsapp.com/send?phone=5531997103367&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20cria%C3%A7%C3%A3o%20de%20sites%20e%20aplicativos!"
-                    target="_blank">WhatsApp</a>
-            </div>
-
-
-
- 
-
-            <!-- <div class="container2">
-
-            </div>
-
-            <div>
-                <div class="container3">
-
-                </div>
-                <div class="container4">
-
-                </div>
-            </div> -->
-        </section>
-
-
-    </main>
-
-    <footer>
-
-    </footer>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>
