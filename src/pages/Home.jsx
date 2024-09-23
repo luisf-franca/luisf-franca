@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import '../styles/home.css';
 
 // COMPONENTS
 import MyExpertise from '../components/MyExpertise/MyExpertise';
@@ -15,8 +16,8 @@ const Home = () => {
         <h1 className="name">LUÍS FILIPE</h1>
         <p className="title">
           {translate(
-            'SOFTWARE ENGINEER, FRONT END & APP DEVELOPER.',
-            'ENGENHEIRO DE SOFTWARE, FRONT END E DESENVOLVEDOR DE APLICATIVOS.',
+            'FRONT END & APP DEVELOPER.',
+            'FRONT END E DESENVOLVEDOR DE APLICATIVOS.',
           )}
         </p>
       </section>

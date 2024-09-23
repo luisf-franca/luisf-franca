@@ -6,36 +6,138 @@
 /* GLOBAL */
 @import url('./styles/colors.css');
 
-/* *,
-button {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  appearance: none;
-  border: none;
-  color: inherit;
-  background: none;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background-color: #f6f6f6;
+  margin: 0px;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #f6f6f6;
+}
+
+.dark-mode nav a {
+  color: #f6f6f6;
+}
+
+.dark-mode nav:hover a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode nav a:hover {
+  color: #f6f6f6;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.container1 {
+  background-color: #0e0f11;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container1 h2 {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.container1 a,
+.container1 p {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.container1 a:hover {
+  opacity: 60%;
+}
+
+/* .container2{
+    background-color:#333333;
+    height: 100%;
+}
+
+.container3{
+    background-color: #666666;
+    height: 50%;
+
+}
+
+.container4{
+    background-color: #999999;
+    height: 50%;
+
+} */
 
 h1,
-h2,
-h1 > *,
-h2 > * {
-  font-family: Montserrat, Bebas Neue, sans-serif;
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0rem;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+h3 {
+  font-family: 'Amiko', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
-#root {
-  position: relative;
-} */
+p,
+li,
+a,
+button {
+  font-family: 'Amiko', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 960px) {
+  .container1 {
+    display: flex;
+    background-color: #0e0f11;
+    padding-bottom: 3rem;
+  }
+
+  .container1 h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+  }
+
+  .container1 p {
+    font-size: 1rem;
+  }
+
+  .container1 a {
+    font-size: 1rem;
+  }
+
+  /* .container2{
+        background-color: red;
+        height: 100%;
+    }
+    
+    .container3{
+        background-color: green;
+        height: 50%;
+    
+    }
+    
+    .container4{
+        background-color: blue;
+        height: 50%;
+    
+    } */
+}

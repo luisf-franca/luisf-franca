@@ -1,0 +1,38 @@
+.home {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../assets/home_background.png') bottom/contain no-repeat;
+}
+
+.name {
+  margin-top: -10rem;
+  text-align: center;
+  font-size: 8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  margin-top: -2rem;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .initial {
+    align-items: start;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .name {
+    font-size: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+}

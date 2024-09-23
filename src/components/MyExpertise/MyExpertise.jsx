@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import './MyExpertise.css';
 
 const MyExpertise = () => {
   const { language } = useLanguage();

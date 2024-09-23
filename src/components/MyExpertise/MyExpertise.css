@@ -1,0 +1,41 @@
+.expertise {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expertise h2 {
+  margin-top: 0px;
+  font-size: 5rem;
+}
+
+.expertise-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.expertise-item {
+  flex: 1;
+  /* margin-block: 3rem; */
+  padding-block: 5rem;
+  padding-inline: 3rem;
+  border: 1px solid #cccccc;
+}
+
+@media (max-width: 960px) {
+  .expertise-container {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .expertise {
+    margin-top: 3rem;
+  }
+
+  .expertise h2 {
+    font-size: 2.5rem;
+  }
+}

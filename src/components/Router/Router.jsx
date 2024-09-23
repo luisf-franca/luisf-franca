@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Home from '../../pages/Home';
-import Work from '../../pages/Work';
+import Home from '../../pages/home';
+import Work from '../../pages/work';
 
 const Router = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import useDarkMode from '../../contexts/DarkMode';
-import '../../styles/styles.css';
+import './Header.css';
 
 // IMAGES
 import dark_logo from '../../assets/logo_dark.png';
