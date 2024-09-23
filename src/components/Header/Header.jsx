@@ -9,23 +9,26 @@ import white_logo from '../../assets/logo_white.png';
 import dark_mode from '../../assets/darkmode.png';
 
 const Header = () => {
-  const { language, toggleLanguage } = useLanguage();
   const { darkMode, toggleDarkMode } = useDarkMode();
-  const translate = (textEn, textPt) => (language === 'en' ? textEn : textPt);
+  const { language, toggleLanguage } = useLanguage();
+  const translate = (enText, ptText) => (language === 'en' ? enText : ptText);
 
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('header');
-      if (window.scrollY > window.innerHeight) {
-        header.classList.add('fixed');
-      } else {
-        header.classList.remove('fixed');
-      }
+      header.classList.toggle('fixed', window.scrollY > window.innerHeight);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  });
+  }, []);
+
+  const links = [
+    { url: 'home', en: '// home', pt: '// início' },
+    { url: 'expertise', en: '// expertise', pt: '// experiência' },
+    { url: 'work', en: '// work', pt: '// trabalho' },
+    { url: 'contact', en: '// contact', pt: '// contato' },
+  ];
 
   return (
     <header className="initial">
@@ -42,22 +45,17 @@ const Header = () => {
       <div className="header_links">
         <nav>
           <ul className="header">
-            {[
-              { en: '// home', pt: '// início' },
-              { en: '// expertise', pt: '// experiência' },
-              { en: '// work', pt: '// trabalho' },
-              { en: '// contact', pt: '// contato' },
-            ].map(({ en, pt }) => (
-              <li key={en}>
-                <a href={`#${en}`}>{translate(en, pt)}</a>
+            {links.map(({ url, en, pt }) => (
+              <li key={url}>
+                <a href={`#${url}`}>{translate(en, pt)}</a>
               </li>
             ))}
           </ul>
 
           <div className="header_mobile">
-            {['home', 'expertise', 'work', 'contact'].map((section) => (
-              <li key={section}>
-                <a href={`#${section}`}>{translate(section, section)}</a>
+            {links.map(({ url, en }) => (
+              <li key={url}>
+                <a href={`#${url}`}>{translate(en, en)}</a>
               </li>
             ))}
           </div>
