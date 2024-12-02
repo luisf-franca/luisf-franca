@@ -51,11 +51,20 @@
       }
 
       & button {
+        cursor: pointer;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         border: none;
         background: none;
+
+        & svg > rect {
+          transition: 0.3s ease;
+        }
+
+        &:hover svg > rect {
+          fill: var(--cinza-400);
+        }
 
         &.prev {
           left: -5rem;
