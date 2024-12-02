@@ -23,6 +23,13 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleLinkClick = (url) => {
+    if (window.location.pathname !== '/') {
+      window.location.href = '/';
+    }
+    window.location.hash = `#${url}`;
+  };
+
   const links = [
     { url: 'home', en: '// home', pt: '// início' },
     { url: 'expertise', en: '// expertise', pt: '// experiência' },
@@ -33,7 +40,7 @@ const Header = () => {
   return (
     <header className="initial">
       <div>
-        <a href="#home" className="logo-link">
+        <a href="/" className="logo-link">
           <img
             src={darkMode ? dark_logo : white_logo}
             alt="logo"
@@ -47,21 +54,37 @@ const Header = () => {
           <ul className="header">
             {links.map(({ url, en, pt }) => (
               <li key={url}>
-                <a href={`#${url}`}>{translate(en, pt)}</a>
+                <a
+                  href={`#${url}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleLinkClick(url);
+                  }}
+                >
+                  {translate(en, pt)}
+                </a>
               </li>
             ))}
           </ul>
 
           <div className="header_mobile">
-            {links.map(({ url, en }) => (
+            {links.map(({ url, en, pt }) => (
               <li key={url}>
-                <a href={`#${url}`}>{translate(en, en)}</a>
+                <a
+                  href={`#${url}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleLinkClick(url);
+                  }}
+                >
+                  {translate(en, pt)}
+                </a>
               </li>
             ))}
           </div>
         </nav>
 
-        <div className="selectors">
+        {/* <div className="selectors">
           <img
             id="darkModeButton"
             src={dark_mode}
@@ -71,7 +94,7 @@ const Header = () => {
           <button id="languageButton" onClick={toggleLanguage}>
             EN/PT
           </button>
-        </div>
+        </div> */}
       </div>
     </header>
   );

@@ -38,13 +38,13 @@ const Footer = () => {
         >
           GitHub
         </a>
-        <a
+        {/* <a
           href="https://www.behance.net/luisffranca"
           target="_blank"
           rel="noopener noreferrer"
         >
           Behance
-        </a>
+        </a> */}
         <a
           href="https://api.whatsapp.com/send?phone=5531988680589&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20cria%C3%A7%C3%A3o%20de%20sites%20e%20aplicativos!"
           target="_blank"
