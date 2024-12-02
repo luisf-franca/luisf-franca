@@ -40,16 +40,16 @@ const Work = () => {
 
       <picture>
         <div className="work-images">
-          {project.image1 && <img src={project.image1} />}
-          {project.image2 && <img src={project.image2} />}
-          {project.image3 && <img src={project.image3} />}
+          {project.image1 && <img src={`/assets/${project.image1}`} />}
+          {project.image2 && <img src={`/assets/${project.image2}`} />}
+          {project.image3 && <img src={`/assets/${project.image3}`} />}
         </div>
 
         <div>
           {images.length > 0 && (
             <div className="carousel-container">
               <img
-                src={images[currentImageIndex]}
+                src={`/assets/${images[currentImageIndex]}`}
                 alt={`${project.title} ${currentImageIndex + 1}`}
                 className={`active-image`}
               />

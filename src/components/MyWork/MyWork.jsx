@@ -4,12 +4,9 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import './MyWork.css';
 
 // IMAGES
-import allboro from '../../assets/allboro.png';
-import allboroweb from '../../assets/allboro-web.png';
-import urblotSimulacao from '../../assets/urblot-simulacao.png';
-import urblotMasterplan from '../../assets/urblot-masterplan.png';
-import urblotFinanciamento from '../../assets/urblot-financiamento.png';
-import cdcap from '../../assets/cdcap.png';
+import allboro from '../../../public/assets/allboro.png';
+import urblotSimulacao from '../../../public/assets/urblot-simulacao.png';
+import cdcap from '../../../public/assets/cdcap.png';
 
 const MyWork = () => {
   const { language } = useLanguage();

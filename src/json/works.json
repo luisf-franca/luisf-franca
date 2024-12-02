@@ -3,27 +3,27 @@
     "id": "allboro",
     "title": "AllBoro Tours",
     "description": "Durante meu tempo na FastPlay, trabalhei exclusivamente no desenvolvimento deste aplicativo de turismo para um cliente de Nova York. Construído em React Native, o app foi projetado para oferecer uma experiência completa aos turistas em Manhattan. Os usuários podiam acompanhar em tempo real a localização de um ônibus hop-on-hop-off, comprar passes diários diretamente no aplicativo e descer nos pontos turísticos desejados. O app também incluía um guia virtual e localização interativa para tornar a experiência ainda mais imersiva. Além disso, contribuí para o desenvolvimento do site do projeto, que também foi feito em React, permitindo aos usuários acessar informações e funcionalidades complementares",
-    "image1": "/src/assets/allboro.png",
-    "image2": "/src/assets/allboro-web.png"
+    "image1": "allboro.png",
+    "image2": "allboro-web.png"
   },
   {
     "id": "urblot",
     "title": "URBLOT",
     "description": "Atualmente faço parte da URBLOT, um projeto inovador para de venda de lotes. O site, desenvolvido em React, conecta loteadoras com clientes finais, permitindo que os usuários visualizem empreendimentos por meio de uma masterplan interativa. A plataforma possibilita desde a simulação de pagamento dos lotes selecionados até o agendamento de visitas aos empreendimentos. Além disso, os clientes podem concluir todo o processo de compra diretamente pelo site, criando uma experiência completa e prática para o usuário final.",
-    "image1": "/src/assets/urblot-simulacao.png",
-    "image2": "/src/assets/urblot-financiamento.png",
-    "image3": "/src/assets/urblot-lancamento.png",
-    "image4": "/src/assets/urblot-masterplan.png",
-    "image5": "/src/assets/urblot-carousel.png",
-    "image6": "/src/assets/urblot-products.png",
-    "image7": "/src/assets/urblot-simulacaoweb.png",
-    "image8": "/src/assets/urblot-home.png"
+    "image1": "urblot-simulacao.png",
+    "image2": "urblot-financiamento.png",
+    "image3": "urblot-lancamento.png",
+    "image4": "urblot-masterplan.png",
+    "image5": "urblot-carousel.png",
+    "image6": "urblot-products.png",
+    "image7": "urblot-simulacaoweb.png",
+    "image8": "urblot-home.png"
   },
   {
     "id": "cdcap",
     "title": "CD Capital",
     "description": "Fui responsável pelo desenvolvimento de uma landing page para uma empresa de empréstimos voltada a pessoas jurídicas. O projeto tinha como objetivo apresentar de forma clara e atrativa os serviços oferecidos pela empresa, com foco em design responsivo e otimização para captação de leads.",
-    "image1": "/src/assets/cdcap.png",
-    "image2": "/src/assets/cdcap-timeline.png"
+    "image1": "cdcap.png",
+    "image2": "cdcap-timeline.png"
   }
 ]
