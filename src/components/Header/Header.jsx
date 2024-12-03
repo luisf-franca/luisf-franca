@@ -33,7 +33,7 @@ const Header = () => {
   const links = [
     { url: 'home', en: '// home', pt: '// início' },
     { url: 'expertise', en: '// expertise', pt: '// experiência' },
-    { url: 'work', en: '// work', pt: '// trabalho' },
+    { url: 'my-work', en: '// work', pt: '// trabalho' },
     { url: 'contact', en: '// contact', pt: '// contato' },
   ];
 

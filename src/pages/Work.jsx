@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import workData from '../json/works.json';
+import React, { useState, useEffect } from 'react';
+import { useParams, useLocation } from 'react-router-dom';
 import '../styles/work.css';
+
+import workData from '../json/works.json';
 import GalleryPrev from '../icons/GalleryPrev';
 import GalleryNext from '../icons/GalleryNext';
 
 const Work = () => {
   const { id } = useParams();
-  const project = workData.find((project) => project.id === id);
+  const location = useLocation();
 
+  const project = workData.find((project) => project.id === id);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const images = [
     project.image4,
