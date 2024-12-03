@@ -2,13 +2,20 @@
 <html>
 
 <head>
-    <meta http-equiv="refresh" content="0; url=/index.html" />
+    <script>
+        const baseURL = "https://luisffranca.site";
+        const currentURL = window.location.href;
+
+        if (!currentURL.startsWith(baseURL)) {
+            window.location.replace(baseURL);
+        }
+    </script>
 </head>
 
 <body>
-    <script>
-        window.location.replace("https://luisffranca.site");
-    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://luisffranca.site" />
+    </noscript>
 </body>
 
 </html>
