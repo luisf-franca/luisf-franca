@@ -8,8 +8,14 @@
 <body>
     <script>
         const base = "http://luisffranca.site";
-        const path = window.location.pathname + window.location.search + window.location.hash;
-        window.location.replace(base + path);
+        const currentURL = window.location.href;
+
+        if (!currentURL.startsWith(base + "/index.html") && !currentURL.startsWith(base + "/")) {
+            const path = window.location.pathname + window.location.search + window.location.hash;
+            window.location.replace(base + path);
+        } else {
+            console.error("Redirecionamento desnecessário evitado para prevenir loops.");
+        }
     </script>
 </body>
 
