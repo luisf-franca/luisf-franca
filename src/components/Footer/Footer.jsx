@@ -18,13 +18,6 @@ const Footer = () => {
           luisfranca@outlook.com
         </a>
         <a
-          href="https://instagram.com/luisf.franca"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-        <a
           href="https://www.linkedin.com/in/luisfilipefranca/"
           target="_blank"
           rel="noopener noreferrer"
