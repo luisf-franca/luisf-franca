@@ -30,7 +30,7 @@ const MyWork = () => {
               'Durante meu tempo na FastPlay, trabalhei exclusivamente no desenvolvimento deste aplicativo de turismo para um cliente de Nova York. Construído em React Native, o app foi projetado para oferecer uma experiência completa aos turistas em Manhattan. Os usuários podiam acompanhar em tempo real a localização de um ônibus hop-on-hop-off, comprar passes diários diretamente no aplicativo e descer nos pontos turísticos desejados. O app também incluía um guia virtual e localização interativa para tornar a experiência ainda mais imersiva. Além disso, contribuí para o desenvolvimento do site do projeto, que também foi feito em React, permitindo aos usuários acessar informações e funcionalidades complementares',
             )}
           </dd>
-          <NavLink to="/work/allboro">Saiba Mais</NavLink>
+          <NavLink to="/allboro">Saiba Mais</NavLink>
         </dl>
         <img className="mockup-mobile" src={allboro} alt="allboro" />
       </div>
@@ -51,7 +51,7 @@ const MyWork = () => {
             )}
           </dd>
 
-          <NavLink to="/work/urblot">Saiba Mais</NavLink>
+          <NavLink to="/urblot">Saiba Mais</NavLink>
         </dl>
         <img
           className="mockup-mobile"
@@ -76,7 +76,7 @@ const MyWork = () => {
             )}
           </dd>
 
-          <NavLink to="/work/cdcap">Saiba Mais</NavLink>
+          <NavLink to="/cdcap">Saiba Mais</NavLink>
         </dl>
         <img className="mockup-web" src={cdcap} alt="cdcap" />
       </div>

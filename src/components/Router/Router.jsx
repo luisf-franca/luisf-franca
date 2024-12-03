@@ -14,7 +14,7 @@ const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/work/:id" element={<Work />} />
+      <Route path="/:id" element={<Work />} />
     </Routes>
   );
 };
